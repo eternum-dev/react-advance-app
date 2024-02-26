@@ -9,10 +9,10 @@ import { Suspense } from "react";
 export const Navigation = () => {
 
 
+
+
     return (
-        <Suspense fallback={setTimeout(() => {
-            <h2>loading..</h2>
-        }, 300)}>
+        <Suspense fallback={<h2>loading...</h2>}>
             <BrowserRouter>
                 <div className="main-layout">
                     <nav>
