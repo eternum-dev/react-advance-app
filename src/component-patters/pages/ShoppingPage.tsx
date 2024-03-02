@@ -1,16 +1,13 @@
-import { ProductCard } from "../components/ProductCard"
-
-
-
+import ProductCard from '../components';
 
 
 
 const propduct = {
     id: '1',
-    title: 'mug - coffe nice'
+    title: 'mug - coffe nice',
 }
-export const ShoppingPage = () => {
 
+export const ShoppingPage = () => {
 
     return (
         <div>
@@ -22,10 +19,11 @@ export const ShoppingPage = () => {
                 flexDirection: 'row',
                 gap: '1rem'
             }}>
-                <ProductCard product={propduct} />
-                <ProductCard product={propduct} />
-                <ProductCard product={propduct} />
-                <ProductCard product={propduct} />
+                <ProductCard product={propduct}>
+                    <ProductCard.Image />
+                    <ProductCard.Title />
+                    <ProductCard.Buttons />
+                </ProductCard>
 
             </div>
 
