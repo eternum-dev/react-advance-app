@@ -11,7 +11,13 @@
   padding: 10px;
   width: calc(100% - 20px);
 }
-.custom-button  button,.custom-button div{
+.custom-button button,
+.custom-button div {
   border-color: white;
   color: white;
+}
+.shopping-page {
+  position: fixed;
+  top: 0;
+  right: 10px;
 }
