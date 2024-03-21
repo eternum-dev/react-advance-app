@@ -1,7 +1,8 @@
 import { BrowserRouter, NavLink, Navigate, Route, Routes } from "react-router-dom"
 import logo from '../assets/react.svg'
 import { RegisterPage } from '../forms/pages/RegisterPage';
-import { FormikPage, FormikAbstraction, FormikComponent, FormikYupPage } from "../forms/pages";
+import { FormikPage, FormikAbstraction, FormikComponent, FormikYupPage, RegisterFormikPage } from "../forms/pages";
+import { DinamicForm } from "../forms/pages/DinamicForm";
 
 
 export const Navigation = () => {
@@ -30,6 +31,12 @@ export const Navigation = () => {
                             <NavLink to='/formik-abstraction' className={({ isActive }) => isActive ? 'nav-active' : ''}>Formik Abstraction</NavLink>
                         </li>
                         <li>
+                            <NavLink to='/formik-register-page' className={({ isActive }) => isActive ? 'nav-active' : ''}>Formik RegisterPage</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to='/dinamic-form' className={({ isActive }) => isActive ? 'nav-active' : ''}>Dinamic Form</NavLink>
+                        </li>
+                        <li>
                             <NavLink to='/about' className={({ isActive }) => isActive ? 'nav-active' : ''}>About</NavLink>
                         </li>
                         <li>
@@ -39,7 +46,7 @@ export const Navigation = () => {
                 </nav>
 
 
-                
+
                 <Routes>formik-yup
                     <Route
                         path="register"
@@ -60,6 +67,14 @@ export const Navigation = () => {
                     <Route
                         path="formik-abstraction"
                         element={<FormikAbstraction />}
+                    />
+                    <Route
+                        path="formik-register-page"
+                        element={<RegisterFormikPage />}
+                    />
+                    <Route
+                        path="dinamic-form"
+                        element={<DinamicForm />}
                     />
                     <Route
                         path="about"

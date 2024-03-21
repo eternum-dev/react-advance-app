@@ -1,0 +1,74 @@
+[
+  {
+    "type": "input",
+    "name": "firstName",
+    "label": "First Name",
+    "placeholder": "Alejandro",
+    "value": "",
+    "validations": [
+      {
+        "type": "required"
+      },
+      {
+        "type": "minLength",
+        "value": 8
+      }
+    ]
+  },
+  {
+    "type": "input",
+    "name": "lastName",
+    "label": "Last Name",
+    "placeholder": "Thon",
+    "value": "",
+    "validations": [
+      {
+        "type": "required"
+      },
+      {
+        "type": "minLength",
+        "value": 8
+      }
+    ]
+  },
+  {
+    "type": "email",
+    "name": "email",
+    "label": "Email",
+    "placeholder": "alejandro.thon@gmail.com",
+    "value": "",
+    "validations": [
+      {
+        "type": "required"
+      },
+      {
+        "type": "email"
+      }
+    ]
+  },
+  {
+    "type": "select",
+    "name": "favgame",
+    "label": "game Vaforite",
+    "value": "",
+    "options": [
+      {
+        "id": 1,
+        "label": "Fornite"
+      },
+      {
+        "id": 2,
+        "label": "Maincraft"
+      },
+      {
+        "id": 3,
+        "label": "League of Legends"
+      }
+    ],
+    "validations": [
+      {
+        "type": "required"
+      }
+    ]
+  }
+]
